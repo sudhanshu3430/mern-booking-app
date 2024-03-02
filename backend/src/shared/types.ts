@@ -16,3 +16,12 @@ export type HotelType = {
     lastUpdated: Date;
 
 }
+
+export type HotelSearchResposne = {
+    data: HotelType[];
+    pagination:{
+        total: number;
+        page: number;
+        pages: number;
+    }
+}
