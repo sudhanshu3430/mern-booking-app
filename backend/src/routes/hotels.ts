@@ -65,6 +65,8 @@ router.get("/", async (req: Request, res: Response) => {
   }
 });
 
+
+
 router.get(
   "/:id",
   [param("id").notEmpty().withMessage("Hotel ID is required")],
